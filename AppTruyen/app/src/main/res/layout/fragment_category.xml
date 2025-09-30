@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+
+
+    android:layout_height="wrap_content">
+
+   <include
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       layout="@layout/notselecttab"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/rlvCatogory">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem thêm"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnShowAdd"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/showadd"
+        >
+
+    </Button>
+
+
+
+</LinearLayout>

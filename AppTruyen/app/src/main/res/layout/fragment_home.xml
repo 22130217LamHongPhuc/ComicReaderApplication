@@ -1,0 +1,294 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorMain"
+            >
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:id="@+id/vpgBanner"
+                android:layout_height="180dp">
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/indicator"
+                android:layout_marginTop="1dp"
+                app:ci_drawable="@drawable/indicator"
+                android:layout_gravity="bottom"
+                app:ci_gravity="center"
+                app:ci_drawable_unselected="@drawable/indicator"
+
+
+                android:layout_below="@+id/vpgBanner"
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+            <RelativeLayout
+                android:layout_below="@id/indicator"
+                android:padding="5dp"
+                android:id="@+id/layoutHome"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/layoutChoose"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/layoutRating"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/sharp_bar_chart_24"
+
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+
+                        <admin.example.apptruyentranh.custom.Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#DFC9C9"
+                            android:text="Xếp hạng">
+
+                        </admin.example.apptruyentranh.custom.Regular>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layoutRoomChat"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/baseline_groups_24"
+
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+
+                        <admin.example.apptruyentranh.custom.Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#DFC9C9"
+                            android:text="Phòng chat">
+
+                        </admin.example.apptruyentranh.custom.Regular>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/layoutBenifit"
+
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:src="@drawable/baseline_diamond_24">
+
+                        </ImageView>
+
+                        <admin.example.apptruyentranh.custom.Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#DFC9C9"
+                            android:text="Phúc lợi">
+
+                        </admin.example.apptruyentranh.custom.Regular>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/layoutShare"
+
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/baseline_share_24"
+
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+
+                        <admin.example.apptruyentranh.custom.Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#DFC9C9"
+                            android:text="Chia sẻ">
+
+                        </admin.example.apptruyentranh.custom.Regular>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/fragmentReadCotinue"
+                    android:layout_below="@+id/layoutChoose"
+                    android:layout_marginTop="30dp"
+                    android:name="admin.example.apptruyentranh.ui.fragment.FragmentCategory"
+                    android:layout_height="wrap_content">
+
+                </FrameLayout>
+
+                <admin.example.apptruyentranh.custom.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_below="@id/fragmentReadCotinue"
+                    android:textSize="19sp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/txtComicsUpdate"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:text="Mới cập nhật">
+
+                </admin.example.apptruyentranh.custom.Regular>
+
+                <admin.example.apptruyentranh.custom.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_below="@id/fragmentReadCotinue"
+                    android:textSize="18sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+
+
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/txtComicsUpdateShowAdd"
+                    android:textColor="#CF3D3D"
+                    android:text="Xem thêm">
+
+                </admin.example.apptruyentranh.custom.Regular>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/txtComicsUpdate"
+                    android:id="@+id/rlvComicsUpdate"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/rlvComicsUpdate"
+                    android:id="@+id/rlvCatogoryRd"
+                    >
+                </androidx.recyclerview.widget.RecyclerView>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/rlvCatogoryRd"
+                    android:id="@+id/fragmentComicsFinish"
+                    android:name="admin.example.apptruyentranh.ui.fragment.FragmentComicsFinish">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/fragmentComicsFinish"
+                    android:id="@+id/fragmentComicsFavorite"
+                    android:name="admin.example.apptruyentranh.ui.fragment.FragmentComicsFavorite">
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+
+                    android:layout_below="@id/fragmentComicsFavorite"
+                    android:id="@+id/fragmentComicsCategory"
+                    android:name="admin.example.apptruyentranh.ui.fragment.FragmentCategory">
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+
+                    android:layout_below="@id/fragmentComicsCategory"
+                    android:id="@+id/fragmentComicsAnotherCate"
+                    android:layout_marginBottom="20dp"
+
+                    android:name="admin.example.apptruyentranh.ui.fragment.FragmentCategory">
+
+                </FrameLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_home"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+
+
+        android:visibility="gone"
+        android:layout_gravity="center" >
+
+    </ProgressBar>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

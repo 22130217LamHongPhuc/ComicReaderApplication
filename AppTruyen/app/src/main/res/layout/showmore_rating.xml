@@ -1,0 +1,113 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@color/colorMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Xep hang"
+        android:id="@+id/txtTypeComics"
+        android:textColor="@color/white"
+        android:textSize="22sp">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:id="@+id/skeleton_showmore"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:visibility="visible"
+           android:layout_marginLeft="10dp"
+
+           android:orientation="vertical">
+           <include
+               layout="@layout/item_skeleton">
+
+           </include>
+
+           <include
+               layout="@layout/item_skeleton">
+
+           </include>
+
+           <include
+               layout="@layout/item_skeleton">
+
+           </include>
+
+           <include
+               layout="@layout/item_skeleton">
+
+           </include>
+
+           <include
+               layout="@layout/item_skeleton">
+
+           </include>
+
+           <include
+               layout="@layout/item_skeleton">
+
+           </include>
+       </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlvShowMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <ProgressBar
+            android:id="@+id/progress_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:indeterminateBehavior="repeat"
+
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginRight="2dp"
+    android:layout_height="match_parent">
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsAnimeAnother"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Anime">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+
+
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsAnimeAnotherShowAdd"
+        android:textColor="#CF3D3D"
+        android:text="Xem thêm">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtComicsAnimeAnother"
+        android:id="@+id/rlvAnime"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_below="@+id/rlvAnime"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsCoDaiAnother"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:text="Cổ đại">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/rlvAnime"
+
+
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsCoDaiAnotherShowAdd"
+        android:textColor="#CF3D3D"
+        android:text="Xem thêm">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtComicsCoDaiAnother"
+        android:id="@+id/rlvCoDai"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_below="@+id/rlvCoDai"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsNgonTinhAnother"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:text="Ngôn tình">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/rlvCoDai"
+
+
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsNgonTinhAnotherShowAdd"
+        android:textColor="#CF3D3D"
+        android:text="Xem thêm">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtComicsNgonTinhAnother"
+        android:id="@+id/rlvNgonTinh"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_below="@+id/rlvNgonTinh"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsWebtoonAnother"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:text="Webtoon">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/rlvNgonTinh"
+
+
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsWebtoonAnotherShowAdd"
+        android:textColor="#CF3D3D"
+        android:text="Xem thêm">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtComicsWebtoonAnother"
+        android:id="@+id/rlvWebtoon"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

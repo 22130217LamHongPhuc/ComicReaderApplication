@@ -1,0 +1,132 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Xep hang"
+        android:visibility="gone"
+        android:id="@+id/txtRating"
+        android:textColor="@color/white"
+        android:textSize="22sp">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlRating"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@color/colorMain"
+        app:tabIndicatorColor="#EF9208"
+        app:tabIndicatorFullWidth="true"
+        app:tabSelectedTextColor="#FB6565"
+        app:tabTextColor="#BDAEAE"
+        />
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:id="@+id/skeleton_rating"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+
+            android:orientation="vertical">
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlvRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/progress_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:indeterminateBehavior="repeat"
+
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

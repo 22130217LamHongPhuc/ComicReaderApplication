@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorMain"
+    android:id="@+id/layout_cmt"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Binh luan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:id="@+id/txt_cmt"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:id="@+id/reclview_cmt"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/txt_cmt"
+        android:layout_above="@id/layoutbottomsheet_cmt"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layoutbottomsheet_cmt"
+        android:orientation="horizontal"
+        android:layout_above="@+id/checkLogin"
+        android:layout_height="wrap_content"
+        >
+
+
+        <EditText
+            android:id="@+id/txtcotentcmt"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bground"
+
+            android:layout_marginRight="5dp"
+            android:hint="Nhap binh luan"
+            android:padding="13dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"></EditText>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:src="@drawable/outline_send_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_sendcmt"
+            android:layout_height="30dp"
+            android:layout_weight="1">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang nhap de binh luan"
+        android:textColor="#F39292"
+        android:textSize="15sp"
+        android:id="@+id/checkLogin"
+        android:layout_marginBottom="5dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+</RelativeLayout>

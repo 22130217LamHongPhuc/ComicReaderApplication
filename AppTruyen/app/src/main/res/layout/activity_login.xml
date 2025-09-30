@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:id="@+id/fragmentlogin"
+          class="admin.example.apptruyentranh.ui.fragment.FragmentSignin"
+          android:layout_height="match_parent"
+          >
+
+      </FrameLayout>
+</RelativeLayout>

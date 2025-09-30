@@ -1,0 +1,74 @@
+# ==========================
+# Android Project GitIgnore
+# ==========================
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration files
+local.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Specific IDEA files to ignore (nếu muốn giữ cấu hình cơ bản)
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Mac OS
+.DS_Store
+
+# Captures (ảnh chụp màn hình trong Android Studio)
+captures/
+
+# External Native Build (CMake / NDK)
+.externalNativeBuild/
+.cxx/
+
+# Signing keys
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# Build outputs
+*/build/
+app/build/
+*/intermediates/
+*/generated/
+
+# Gradle cache
+.gradle/
+gradle-app.setting
+
+# Google Services (tùy chọn)
+# Nếu bạn muốn giữ lại file google-services.json thì comment dòng dưới
+# app/google-services.json
+
+# Firebase / Crashlytics
+.crashlytics/
+fabric.properties
+
+# Android Profiling
+*.hprof
+
+# VS Code
+.vscode/
+
+# Fastlane (CI/CD)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# ==========================
+# END
+# ==========================

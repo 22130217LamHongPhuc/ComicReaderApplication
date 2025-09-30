@@ -1,0 +1,186 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img_userProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/usercmt">
+
+
+    </ImageView>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:id="@+id/etxt_usernameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/img_userProfile"
+        android:text="username"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <TextView
+        android:id="@+id/separate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_userProfile"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#FD7575"
+        android:textSize="1sp">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/layout_historyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separate"
+        android:layout_marginTop="30dp">
+
+
+        <ImageView
+            android:id="@+id/img_historyProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/baseline_history_24">
+
+        </ImageView>
+
+        <admin.example.apptruyentranh.custom.Regular
+            android:id="@+id/txt_historyProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/img_historyProfile"
+            android:text="Lịch sử đọc"
+            android:textColor="@color/white"
+            android:textSize="14sp">
+
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_historyProfile"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="#FD7575"
+        android:text="Item"
+        android:textSize="1sp">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/layout_historyProfile"
+        android:layout_marginTop="22dp">
+
+
+        <ImageView
+            android:id="@+id/img_changePassword"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/outline_settings_24">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_changePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/img_changePassword"
+            android:text="Đổi mật khẩu"
+            android:textColor="@color/white"
+            android:textSize="14sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_changePassword"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="#FD7575"
+        android:text="Item"
+        android:textSize="1sp">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_signoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/layout_changePassword"
+        android:layout_marginTop="22dp">
+
+
+        <ImageView
+            android:id="@+id/img_signoutProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/outline_login_24">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_signoutProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/img_signoutProfile"
+            android:text="Đăng xuất"
+            android:textColor="@color/white"
+            android:textSize="14sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+
+        android:id="@+id/progressLogin">
+
+    </ProgressBar>
+
+
+</RelativeLayout>

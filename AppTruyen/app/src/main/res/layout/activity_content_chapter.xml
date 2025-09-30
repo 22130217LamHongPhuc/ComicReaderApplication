@@ -1,0 +1,37 @@
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+        <admin.example.apptruyentranh.custom.Regular
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter"
+
+            android:textColor="@color/white"
+            android:textSize="24sp"
+
+            android:textStyle="bold"
+
+            android:id="@+id/txtlistChapterPosition">
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/rlvContentChapter">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+

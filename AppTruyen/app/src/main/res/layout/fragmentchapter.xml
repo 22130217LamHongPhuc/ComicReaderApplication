@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:id="@+id/progress_chapter"
+            android:visibility="gone"
+            android:layout_gravity="center"
+
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sach"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:id="@+id/txtlistChapter">
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="14dp"
+
+            android:layout_height="match_parent"
+            android:id="@+id/rlvListChapter">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>

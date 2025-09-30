@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="7dp"
+
+        android:id="@+id/cardupdate"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="95dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imgItemNameUpdate"
+            android:layout_height="115dp">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="95dp"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/txtItemNameUpdate"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:layout_below="@id/cardupdate"
+        android:layout_centerHorizontal="true"
+        android:text="ten truyen">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+</RelativeLayout>

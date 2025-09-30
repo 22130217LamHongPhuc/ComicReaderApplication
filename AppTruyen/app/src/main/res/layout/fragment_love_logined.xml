@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:background="@drawable/bglogin"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Tu sach"
+
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:id="@+id/txtbook"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+    <include
+
+        layout="@layout/custom_tab"
+        tools:ignore="IncludeLayoutParam">
+
+    </include>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ProgressBar
+           android:layout_width="wrap_content"
+           android:id="@+id/progress_favorite"
+           android:indeterminateBehavior="repeat"
+           android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+           android:visibility="gone"
+           android:layout_centerInParent="true"
+           android:layout_height="wrap_content">
+
+       </ProgressBar>
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/rlvLoveAndRead"
+           android:layout_marginLeft="10dp"
+
+           android:layout_marginTop="25dp">
+
+       </androidx.recyclerview.widget.RecyclerView>
+   </RelativeLayout>
+
+
+
+
+</LinearLayout>

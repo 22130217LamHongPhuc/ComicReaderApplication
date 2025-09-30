@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "779230066303",
+    "project_id": "apptruyentranh-4b550",
+    "storage_bucket": "apptruyentranh-4b550.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779230066303:android:ebfe365c451fda6b12f14a",
+        "android_client_info": {
+          "package_name": "admin.example.apptruyentranh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkZbZ2ouXK_T6Ep8ltjS9szHiApMxD5x8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

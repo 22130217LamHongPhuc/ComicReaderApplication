@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.core.widget.NestedScrollView
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:id="@+id/layout_information"
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/imgEye"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/baseline_remove_red_eye_24"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <admin.example.apptruyentranh.custom.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Da doc"
+                    android:textSize="14sp"
+                    android:textColor="#DFB2B2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/imgEye"
+                    android:id="@+id/txtReadedDetail">
+
+                </admin.example.apptruyentranh.custom.Regular>
+
+
+                <admin.example.apptruyentranh.custom.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000 view"
+                    android:textSize="14sp"
+                    android:layout_below="@id/txtReadedDetail"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/imgEye"
+                    android:id="@+id/txtSlReadedDetail">
+
+                </admin.example.apptruyentranh.custom.Regular>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/imgstar"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/outline_star_border_purple500_24"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <admin.example.apptruyentranh.custom.Regular
+                    android:id="@+id/txtStarDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/imgstar"
+                    android:text="Danh gia"
+                    android:textColor="#DFB2B2"
+                    android:textSize="14sp"
+                    >
+
+                </admin.example.apptruyentranh.custom.Regular>
+
+
+                <admin.example.apptruyentranh.custom.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:textSize="14sp"
+                    android:layout_below="@id/txtStarDetail"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/imgstar"
+                    android:id="@+id/txtSlStarDetail">
+
+                </admin.example.apptruyentranh.custom.Regular>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/imglist"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/sharp_list_alt_24"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <admin.example.apptruyentranh.custom.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chuong"
+                    android:textSize="14sp"
+                    android:textColor="#DFB2B2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/imglist"
+                    android:id="@+id/txtListDetail">
+
+                </admin.example.apptruyentranh.custom.Regular>
+
+
+                <admin.example.apptruyentranh.custom.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000 chuong"
+                    android:textSize="14sp"
+                    android:layout_below="@id/txtListDetail"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/imglist"
+                    android:id="@+id/txtSlListChapterDetail">
+
+                </admin.example.apptruyentranh.custom.Regular>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <admin.example.apptruyentranh.custom.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Loai"
+            android:layout_marginTop="14dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txtcategorydetail"
+            android:layout_below="@id/layout_information"
+            android:textColor="@color/white">
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+        <admin.example.apptruyentranh.custom.Regular
+            android:id="@+id/txtcategorydetail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtcategorydetail"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bgroundcategory"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Hoan Thanh"
+
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+        <admin.example.apptruyentranh.custom.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xuyen Khong"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bgroundcategory"
+            android:padding="6dp"
+            android:gravity="center"
+            android:id="@+id/txtcategorydetail2"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/txtcategorydetail1"
+            android:layout_marginLeft="13dp"
+            android:layout_below="@id/txtcategorydetail"
+            android:textColor="@color/white">
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/txtcategorydetail1"
+            android:layout_marginTop="15dp"
+            android:id="@+id/indicatorDetail"
+            android:background="#A89A9A">
+
+        </TextView>
+
+        <admin.example.apptruyentranh.custom.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tac gia"
+            android:layout_marginTop="14dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txtauthordetail"
+            android:layout_below="@id/indicatorDetail"
+            android:textColor="@color/white">
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+
+        <admin.example.apptruyentranh.custom.Regular
+            android:id="@+id/txtauthordetail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtauthordetail"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bgroundcategory"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Phuc"
+
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+        <admin.example.apptruyentranh.custom.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tai"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bgroundcategory"
+            android:padding="6dp"
+            android:gravity="center"
+            android:id="@+id/txtauthordetail2"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/txtauthordetail1"
+            android:layout_marginLeft="13dp"
+            android:layout_below="@id/txtauthordetail"
+            android:textColor="@color/white">
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/txtauthordetail1"
+            android:layout_marginTop="15dp"
+            android:id="@+id/indicatorauthorDetail"
+            android:background="#A89A9A">
+
+        </TextView>
+
+        <admin.example.apptruyentranh.custom.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noi dung"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+            android:textSize="18sp"
+            android:id="@+id/txtcontent"
+            android:layout_below="@id/indicatorauthorDetail"
+            android:textColor="@color/white">
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La mot nhan vein.sdffas"
+            android:layout_marginTop="14dp"
+            android:textSize="16sp"
+            android:id="@+id/txtcontentDetail"
+            android:layout_below="@id/txtcontent"
+            android:textColor="#B5ACAC">
+
+        </TextView>
+
+        <admin.example.apptruyentranh.custom.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binh luan"
+            android:layout_marginTop="14dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txtbl"
+
+            android:layout_below="@id/txtcontentDetail"
+            android:textColor="@color/white">
+
+        </admin.example.apptruyentranh.custom.Regular>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/rlvcmtInfor"
+            android:layout_below="@+id/txtbl">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+

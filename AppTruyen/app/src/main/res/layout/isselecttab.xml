@@ -1,0 +1,16 @@
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="7dp"
+        android:textColor="@color/white"
+        android:text="Xuyen Khong"
+        android:id="@+id/txttab">
+
+    </admin.example.apptruyentranh.custom.Regular>
+</RelativeLayout>

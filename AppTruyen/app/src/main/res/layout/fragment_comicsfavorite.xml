@@ -1,0 +1,42 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsFavorite"
+        android:textColor="@color/white"
+        android:text="Có thể bạn thích">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtComicsFavoriteShowAdd"
+        android:textColor="#F13535"
+        android:text="Xem thêm">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtComicsFavorite"
+        android:id="@+id/rlvComicsFavorite"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+f<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    android:weightSum="10"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txttiplogin"
+        android:layout_centerInParent="true"
+        android:text="Hãy đăng nhập để trải nghiệm tiện ích nhóe"
+        android:textColor="#BCADAD"
+        android:layout_weight="5"
+        android:layout_height="0dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_loginfragLove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttiplogin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_btnloginver2"
+        android:text="Đăng nhập"
+
+        android:textColor="@color/white"
+
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck">
+
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/itemimgContentChapter"
+        android:layout_height="wrap_content">
+
+    </ImageView>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/progresscontentchapter"
+        android:visibility="visible"
+
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+</RelativeLayout>

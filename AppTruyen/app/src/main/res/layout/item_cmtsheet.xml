@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="17dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_cmtitem"
+        android:src="@drawable/usercmt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="3dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:text="user"
+        android:id="@+id/txt_usercmtitem"
+        android:layout_toRightOf="@id/img_cmtitem"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:text="cmt"
+        android:id="@+id/txt_cmtitem"
+
+        android:layout_toRightOf="@id/img_cmtitem"
+        android:padding="10dp"
+        android:background="@drawable/cmt"
+        android:textColor="@color/white"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/txt_usercmtitem"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+</RelativeLayout>

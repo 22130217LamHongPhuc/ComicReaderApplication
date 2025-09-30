@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:id="@+id/cardcategory"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imgitemcategory">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtitemnameCategory"
+        android:text="ten truyen"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@id/cardcategory"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="15sp">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtitemviewCategory"
+        android:layout_marginLeft="13dp"
+        android:textStyle="italic"
+        android:textColor="#DCC4C4"
+
+        android:text="1k luot xem"
+
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtitemnameCategory"
+        android:layout_toRightOf="@id/cardcategory"
+        android:textSize="13sp">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:id="@+id/txtitemstarCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtitemnameCategory"
+
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/imgitemstarCategory"
+        android:text="5.0/5"
+        android:textColor="#DCC4C4"
+        android:textSize="13sp"
+        android:textStyle="italic">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible"
+        android:layout_marginLeft="4dp"
+
+
+        android:layout_toLeftOf="@id/imgRatingCategory"
+        android:layout_below="@id/txtitemnameCategory"
+        android:id="@+id/imgitemstarCategory"
+        android:layout_marginRight="15dp"
+
+
+        android:src="@drawable/baseline_star_24">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imgitemheartCategory"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/txtitemnameCategory"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/imgRatingCategory"
+
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/heartred"
+        android:visibility="invisible">
+
+    </ImageView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtitemnameCategory"
+        android:visibility="invisible"
+        android:src="@drawable/rating1"
+        android:id="@+id/imgRatingCategory"
+
+        android:layout_alignParentRight="true">
+
+    </ImageView>
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtitemStatusCategory"
+        android:layout_marginLeft="13dp"
+        android:padding="3dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:background="@drawable/itemtext"
+
+        android:text="ongoing"
+        android:textColor="@color/white"
+        android:layout_below="@id/txtitemviewCategory"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/cardcategory"
+        android:textSize="13sp">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+
+
+    <admin.example.apptruyentranh.custom.Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardcategory"
+        android:layout_marginTop="20dp"
+        android:textSize="1sp"
+        android:background="#424141"
+        android:id="@+id/txtindicator">
+
+    </admin.example.apptruyentranh.custom.Regular>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+   android:background="@color/colorMain"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/AppSearchView"
+        android:focusedByDefault="true"
+
+        android:focusable="true"
+
+
+        app:searchIcon="@drawable/baseline_search_24"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_searchview"
+        android:layout_width="match_parent"
+        android:id="@+id/searchview"
+
+        app:searchHintIcon="@drawable/baseline_search_24"
+        android:layout_height="wrap_content" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/skeleton_search"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/layout_skeleton_search"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+
+            <include
+                layout="@layout/item_skeleton">
+
+            </include>
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:layout_width="match_parent"
+             android:visibility="invisible"
+             android:textColor="#f00"
+             android:gravity="center"
+             android:id="@+id/txtNotSearchComics"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:textSize="14sp"
+             android:text="Khong tim thay truyen tranh ">
+
+
+         </TextView>
+
+
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/rlvSearch"
+             android:layout_width="match_parent"
+
+
+             android:layout_height="wrap_content"
+
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginBottom="10dp">
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+     </RelativeLayout>
+      <ProgressBar
+          android:layout_width="wrap_content"
+          android:id="@+id/progress_search"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          android:indeterminateBehavior="repeat"
+          android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center">
+
+      </ProgressBar>
+
+  </RelativeLayout>
+
+
+
+</LinearLayout>

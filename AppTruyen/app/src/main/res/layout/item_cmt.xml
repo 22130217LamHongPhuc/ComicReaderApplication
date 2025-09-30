@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    app:cardCornerRadius="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <RelativeLayout
+      android:layout_width="250dp"
+      android:background="#8A7777"
+      android:padding="10dp"
+      android:layout_height="120dp">
+
+
+      <ImageView
+
+          android:id="@+id/img_cmtitem"
+          android:layout_width="30dp"
+          android:src="@drawable/usercmt"
+          android:layout_height="30dp"
+          android:scaleType="centerCrop"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+          >
+
+      </ImageView>
+
+      <admin.example.apptruyentranh.custom.Regular
+          android:id="@+id/txt_usercmtitem"
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_toRightOf="@id/img_cmtitem"
+          android:text="user"
+          android:textColor="@color/white"
+          android:textStyle="bold">
+
+      </admin.example.apptruyentranh.custom.Regular>
+
+      <admin.example.apptruyentranh.custom.Regular
+          android:layout_width="wrap_content"
+          android:text="cmt"
+          android:id="@+id/txt_cmtitem"
+          android:layout_marginTop="10dp"
+          android:maxLines="2"
+          android:ellipsize="end"
+          android:padding="10dp"
+          android:textColor="@color/white"
+          android:layout_below="@id/img_cmtitem"
+          android:layout_height="wrap_content">
+
+      </admin.example.apptruyentranh.custom.Regular>
+
+  </RelativeLayout>
+</androidx.cardview.widget.CardView>
